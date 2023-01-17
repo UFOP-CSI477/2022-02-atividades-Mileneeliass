@@ -5,7 +5,7 @@
 - Nome: Milene Elias Santos
 - Matrícula: 18.1.5956
 - Curso: Engenharia de Computação
-- Semestre/Ano correntes: 2022/2
+- Semestre/Ano correntes: 2/2022
 - Link para o seu GitHub: https://github.com/Mileneeliass
 
 ## [Projeto final:](./Projeto/README.md)
