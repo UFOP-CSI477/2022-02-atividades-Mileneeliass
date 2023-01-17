@@ -8,7 +8,7 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.
 
 ### 1. Funcionalidades implementadas
 <!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
