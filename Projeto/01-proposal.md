@@ -1,6 +1,6 @@
 # **CSI606-2023-01 - Remoto - Trabalho Final - Resultados**
 
-## *Aluna(o): Milene Elias Santos*
+## *Aluna: Milene Elias Santos*
 
 
 --------------
