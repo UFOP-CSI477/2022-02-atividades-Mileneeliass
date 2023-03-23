@@ -33,10 +33,8 @@ O objetivo deste trabalho é desenvolver um sistema web para gerenciamento de ta
 ### 4. Protótipo
 O sistema tem uma interface simples e fácil de usar, com uma lista de tarefas a serem realizadas. Os usuários podem adicionar novas tarefas clicando em um botão de adição, inserindo o título da tarefa e selecionando a data de início e de vencimento.Os usuários também podem editar ou excluir uma tarefa, clicando nos botões correspondentes. O sistema inclui um recurso de filtro para ajudar os usuários a encontrar tarefas específicas, permitindo a filtragem por data, nome, e palavras-chave. A interface do usuário tem um design minimalista, com um fundo branco, fonte preta e ícones simples para adicionar, editar e excluir tarefas. 
 
-### 5. Referências
 
-
-2. # **Trabalho Final - Resultados**
+2. #**Trabalho Final - Resultados**
 ### Resumo
 O objetivo deste trabalho é desenvolver um sistema web para gerenciamento de tarefas pessoais. O sistema permitirá que os usuários criem, editem e excluam tarefas, atribuindo prazos a cada uma delas. Além disso, o sistema também poderá enviar lembretes aos usuários para que eles não se esqueçam das tarefas pendentes. O sistema será desenvolvido utilizando tecnologias web modernas. Com este sistema, espera-se que os usuários possam organizar melhor suas tarefas diárias, aumentando sua produtividade e reduzindo o estresse causado pela desorganização.
 
@@ -75,5 +73,3 @@ Para instalar o sistema web  de tarefas que foi feito em C# e .NET, siga as segu
 8.erifique as configurações de depuração e certifique-se de que o projeto esteja configurado corretamente para ser executado no servidor web de sua escolha.
 
 9.Compile o projeto.
-### 6. Referências
-<!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
