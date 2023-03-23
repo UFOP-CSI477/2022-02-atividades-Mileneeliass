@@ -1,0 +1,109 @@
+﻿@model DoacaoModel
+@{
+    ViewData["Title"] = "Criar doação";
+}
+
+<br />
+<div class="text-center">
+    <h1 class="display-4">Cadastrar doação</h1>
+
+</div>
+
+<form asp-controller="Doacao" asp-action="Criar" method="post">
+    <div class="form-group">
+        <label for="nome">Nome completo</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome">
+        @Html.ValidationMessageFor(x =>x.Nome)
+    </div>
+
+    <div class="form-group">
+        <label for="documento">Documento</label>
+        <input type="text" asp-for="Documento" class="form-control" placeholder="Digite o documento">
+        @Html.ValidationMessageFor(x =>x.Documento)
+    </div>
+
+    <div class="form-group">
+        <label for="rua">Rua</label>
+        <input type="text" asp-for="Rua" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Rua)
+    </div>
+
+    <div class="form-group">
+        <label for="numero">Número</label>
+        <input type="text" asp-for="Número" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Número)
+    </div>
+
+    <div class="form-group">
+        <label for="complemento">Complemento</label>
+        <input type="text" asp-for="Complemento" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Complemento)
+    </div>
+
+    <div class="form-group">
+        <label for="cidade">Cidade</label>
+        <input type="text" asp-for="Cidade" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Cidade)
+    </div>
+
+    <div class="form-group">
+        <label for="estado">Estado</label>
+        <input type="text" asp-for="Estado" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Estado)
+    </div>
+
+    <div class="form-group">
+        <label for="tipo sanguineo">Tipo sanguineo</label>
+        <input type="text" asp-for="Tipo_sanguíneo" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Tipo_sanguíneo)
+    </div>
+
+    <div class="form-group">
+        <label for="fator">Fator</label>
+        <input type="text" asp-for="Fator" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Fator)
+    </div>
+
+    <div class="form-group">
+        <label for="data de doacao">Data de doação</label>
+        <input type="date" asp-for="Data_de_doacao" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Data_de_doacao)
+    </div>
+
+    <div class="form-group">
+        <label for="nome local">Nome do local de doação</label>
+        <input type="text" asp-for="Nome_local_doacao" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Nome_local_doacao)
+    </div>
+    <div class="form-group">
+        <label for="rua local">Rua do local de doação</label>
+        <input type="text" asp-for="Rua_local_doacao" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Rua_local_doacao)
+    </div>
+    <div class="form-group">
+        <label for="num local">Nº do local de doação</label>
+        <input type="text" asp-for="Num_local_doacao" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Num_local_doacao)
+    </div>
+
+    <div class="form-group">
+        <label for="complemento local">Complemento do local de doação</label>
+        <input type="text" asp-for="Complemento_local_doacao" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Complemento_local_doacao)
+    </div>
+
+    <div class="form-group">
+        <label for="cidade doacao">Cidade de doação</label>
+        <input type="text" asp-for="Cidade_local_doacao" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Cidade_local_doacao)
+    </div>
+    <div class="form-group">
+        <label for="estado doacao">Estado de doação</label>
+        <input type="text" asp-for="Estado_local_doacao" class="form-control" placeholder="">
+        @Html.ValidationMessageFor(x =>x.Estado_local_doacao)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+    <a class="btn btn-secondary " asp-controller="Doacao" asp-action="Index" role="button">Voltar</a>
+</form>
+

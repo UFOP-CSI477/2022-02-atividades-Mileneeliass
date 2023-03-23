@@ -1,0 +1,92 @@
+﻿@model List<DoacaoModel>
+@{
+    ViewData["Title"] = "Listagem de doação";
+}
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+    <a class="btn btn-primary" role="button" asp-controller="Doacao" asp-action="Criar">Adicionar</a>
+</div>
+
+<br/>
+<div class="text-center">
+
+    @if(TempData["MensagemSucesso"] != null)
+    {
+
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+
+
+    <h1 class="display-4">Listagem de doação</h1>
+
+    <table class="table table-bordered" id="table-doacoes">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th style="white-space: nowrap; text-align: center;">Nome</th>
+                <th style="white-space: nowrap; text-align: center;">Documento</th>
+                <th style="white-space: nowrap; text-align: center;">Rua</th>
+                <th style="white-space: nowrap; text-align: center;">Número</th>
+                <th style="white-space: nowrap; text-align: center;">Complemento</th>
+                <th style="white-space: nowrap; text-align: center;">Cidade</th>
+                <th style="white-space: nowrap; text-align: center;">Estado</th>
+                <th style="white-space: nowrap; text-align: center;">Tipo sanguíneo</th>
+                <th style="white-space: nowrap; text-align: center;">Fator</th>
+                <th style="white-space: nowrap; text-align: center;">Data de doação</th>
+                <th style="white-space: nowrap; text-align: center;">Nome do local de doação</th>
+                <th style="white-space: nowrap; text-align: center;">Rua do local de doação</th>
+                <th style="white-space: nowrap; text-align: center;">Nº do local de doação</th>
+                <th style="white-space: nowrap; text-align: center;">Complemento do local doação</th>
+                <th style="white-space: nowrap; text-align: center;">Cidade de doação</th>
+                <th style="white-space: nowrap; text-align: center;">Estado de doação</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model != null && Model.Any())
+            { 
+                foreach (DoacaoModel doacao in Model)
+                {
+                           <tr>
+                <th scope="row">@doacao.Id</th>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Nome</td>
+                        <td style="text-align: center;">@doacao.Documento</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Rua</td>
+                        <td style="text-align: center;">@doacao.Número</td>
+                        <td style="text-align: center;">@doacao.Complemento</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Cidade</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Estado</td>
+                        <td style="text-align: center;">@doacao.Tipo_sanguíneo</td>
+                        <td style="text-align: center;">@doacao.Fator</td>
+                        <td style="text-align: center;">@doacao.Data_de_doacao</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Nome_local_doacao</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Rua_local_doacao</td>
+                        <td style="text-align: center;">@doacao.Num_local_doacao</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Complemento_local_doacao</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Cidade_local_doacao</td>
+                        <td style="white-space: nowrap; text-align: center;">@doacao.Estado_local_doacao</td>
+                <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-route-id="@doacao.Id" asp-controller="Doacao" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-secondary" asp-route-id="@doacao.Id" asp-controller="Doacao" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </td>
+            </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
