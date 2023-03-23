@@ -4,7 +4,7 @@ Este documento deverá ser substituído pela estrutura definida pelos modelos a 
 
 1.  **CSI606-2021-02 - Remoto - Proposta de Trabalho Final**
 
-## *Aluna(o): Milene Elias Santos*
+## *Aluna: Milene Elias Santos*
 
 --------------
 
