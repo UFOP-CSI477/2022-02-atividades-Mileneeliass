@@ -36,8 +36,7 @@ O sistema tem uma interface simples e fácil de usar, com uma lista de tarefas a
 ### 5. Referências
 
 
-2. # **CSI606-2023-01 - Remoto - Trabalho Final - Resultados**
-3. 
+2. # **Trabalho Final - Resultados**
 ### Resumo
 O objetivo deste trabalho é desenvolver um sistema web para gerenciamento de tarefas pessoais. O sistema permitirá que os usuários criem, editem e excluam tarefas, atribuindo prazos a cada uma delas. Além disso, o sistema também poderá enviar lembretes aos usuários para que eles não se esqueçam das tarefas pendentes. O sistema será desenvolvido utilizando tecnologias web modernas. Com este sistema, espera-se que os usuários possam organizar melhor suas tarefas diárias, aumentando sua produtividade e reduzindo o estresse causado pela desorganização.
 
